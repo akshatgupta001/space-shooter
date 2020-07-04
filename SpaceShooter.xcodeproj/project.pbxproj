@@ -9,25 +9,37 @@
 /* Begin PBXBuildFile section */
 		E0B847AF24AF8CE1003EB73D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B847AE24AF8CE1003EB73D /* AppDelegate.swift */; };
 		E0B847B124AF8CE1003EB73D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E0B847B024AF8CE1003EB73D /* GameScene.sks */; };
-		E0B847B324AF8CE1003EB73D /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = E0B847B224AF8CE1003EB73D /* Actions.sks */; };
 		E0B847B524AF8CE1003EB73D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B847B424AF8CE1003EB73D /* GameScene.swift */; };
 		E0B847B724AF8CE1003EB73D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B847B624AF8CE1003EB73D /* GameViewController.swift */; };
 		E0B847BA24AF8CE1003EB73D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0B847B824AF8CE1003EB73D /* Main.storyboard */; };
 		E0B847BC24AF8CE3003EB73D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0B847BB24AF8CE3003EB73D /* Assets.xcassets */; };
 		E0B847BF24AF8CE3003EB73D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0B847BD24AF8CE3003EB73D /* LaunchScreen.storyboard */; };
+		E0B847C724AF8E6B003EB73D /* StarField.sks in Resources */ = {isa = PBXBuildFile; fileRef = E0B847C624AF8E6B003EB73D /* StarField.sks */; };
+		E0B847C924B03BC0003EB73D /* waves.json in Resources */ = {isa = PBXBuildFile; fileRef = E0B847C824B03BC0003EB73D /* waves.json */; };
+		E0B847CB24B03BC8003EB73D /* enemy-types.json in Resources */ = {isa = PBXBuildFile; fileRef = E0B847CA24B03BC8003EB73D /* enemy-types.json */; };
+		E0B847CD24B03BE7003EB73D /* EnemyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B847CC24B03BE7003EB73D /* EnemyType.swift */; };
+		E0B847CF24B03F33003EB73D /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B847CE24B03F33003EB73D /* Wave.swift */; };
+		E0B847D124B0409E003EB73D /* Bundle-decoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B847D024B0409E003EB73D /* Bundle-decoding.swift */; };
+		E0B847D324B072EF003EB73D /* EnemyNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B847D224B072EF003EB73D /* EnemyNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E0B847AB24AF8CE1003EB73D /* SpaceShooter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceShooter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0B847AE24AF8CE1003EB73D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0B847B024AF8CE1003EB73D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		E0B847B224AF8CE1003EB73D /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		E0B847B424AF8CE1003EB73D /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		E0B847B624AF8CE1003EB73D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		E0B847B924AF8CE1003EB73D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E0B847BB24AF8CE3003EB73D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0B847BE24AF8CE3003EB73D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0B847C024AF8CE3003EB73D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0B847C624AF8E6B003EB73D /* StarField.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StarField.sks; sourceTree = "<group>"; };
+		E0B847C824B03BC0003EB73D /* waves.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = waves.json; sourceTree = "<group>"; };
+		E0B847CA24B03BC8003EB73D /* enemy-types.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "enemy-types.json"; sourceTree = "<group>"; };
+		E0B847CC24B03BE7003EB73D /* EnemyType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyType.swift; sourceTree = "<group>"; };
+		E0B847CE24B03F33003EB73D /* Wave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wave.swift; sourceTree = "<group>"; };
+		E0B847D024B0409E003EB73D /* Bundle-decoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-decoding.swift"; sourceTree = "<group>"; };
+		E0B847D224B072EF003EB73D /* EnemyNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,13 +74,19 @@
 			children = (
 				E0B847AE24AF8CE1003EB73D /* AppDelegate.swift */,
 				E0B847B024AF8CE1003EB73D /* GameScene.sks */,
-				E0B847B224AF8CE1003EB73D /* Actions.sks */,
 				E0B847B424AF8CE1003EB73D /* GameScene.swift */,
+				E0B847D224B072EF003EB73D /* EnemyNode.swift */,
 				E0B847B624AF8CE1003EB73D /* GameViewController.swift */,
 				E0B847B824AF8CE1003EB73D /* Main.storyboard */,
 				E0B847BB24AF8CE3003EB73D /* Assets.xcassets */,
+				E0B847CC24B03BE7003EB73D /* EnemyType.swift */,
+				E0B847D024B0409E003EB73D /* Bundle-decoding.swift */,
+				E0B847CE24B03F33003EB73D /* Wave.swift */,
+				E0B847C624AF8E6B003EB73D /* StarField.sks */,
 				E0B847BD24AF8CE3003EB73D /* LaunchScreen.storyboard */,
 				E0B847C024AF8CE3003EB73D /* Info.plist */,
+				E0B847CA24B03BC8003EB73D /* enemy-types.json */,
+				E0B847C824B03BC0003EB73D /* waves.json */,
 			);
 			path = SpaceShooter;
 			sourceTree = "<group>";
@@ -132,10 +150,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0B847BA24AF8CE1003EB73D /* Main.storyboard in Resources */,
+				E0B847CB24B03BC8003EB73D /* enemy-types.json in Resources */,
 				E0B847B124AF8CE1003EB73D /* GameScene.sks in Resources */,
+				E0B847C724AF8E6B003EB73D /* StarField.sks in Resources */,
 				E0B847BC24AF8CE3003EB73D /* Assets.xcassets in Resources */,
+				E0B847C924B03BC0003EB73D /* waves.json in Resources */,
 				E0B847BF24AF8CE3003EB73D /* LaunchScreen.storyboard in Resources */,
-				E0B847B324AF8CE1003EB73D /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,8 +166,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0B847D124B0409E003EB73D /* Bundle-decoding.swift in Sources */,
+				E0B847D324B072EF003EB73D /* EnemyNode.swift in Sources */,
 				E0B847B524AF8CE1003EB73D /* GameScene.swift in Sources */,
+				E0B847CF24B03F33003EB73D /* Wave.swift in Sources */,
 				E0B847B724AF8CE1003EB73D /* GameViewController.swift in Sources */,
+				E0B847CD24B03BE7003EB73D /* EnemyType.swift in Sources */,
 				E0B847AF24AF8CE1003EB73D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +319,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J32C9YHJ44;
 				INFOPLIST_FILE = SpaceShooter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +327,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = coded.SpaceShooter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -313,6 +338,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J32C9YHJ44;
 				INFOPLIST_FILE = SpaceShooter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,7 +346,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = coded.SpaceShooter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
