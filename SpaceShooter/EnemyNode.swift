@@ -52,4 +52,32 @@ class EnemyNode: SKSpriteNode {
         
     }
     
+    func fire() {
+        let weaponType = "\(type.name)Weapon"
+        
+        let weapon = SKSpriteNode(imageNamed: weaponType)
+        weapon.name = "enemyWeapon"
+        weapon.position = position
+        weapon.zRotation = zRotation
+        parent?.addChild(weapon)
+         
+        weapon.physicsBody = SKPhysicsBody(rectangleOf: weapon.size)
+        weapon.physicsBody?.categoryBitMask = collisionType.enemyWeapon.rawValue
+        weapon.physicsBody?.collisionBitMask = collisionType.player.rawValue
+        weapon.physicsBody?.contactTestBitMask = collisionType.player.rawValue
+        weapon.physicsBody?.mass = 0.001
+        
+        let speed : CGFloat = 1
+        let adjustedRotation = zRotation + (CGFloat.pi/2)
+        
+        let dx = speed * cos(adjustedRotation)
+        let dy = speed * sin(adjustedRotation)
+        
+        weapon.physicsBody?.applyImpulse(CGVector(dx: dx, dy: dy))
+        
+        
+        
+        
+    }
+    
 }

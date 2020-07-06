@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E051734E24B24A95008031AC /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = E051734D24B24A95008031AC /* Explosion.sks */; };
 		E0B847AF24AF8CE1003EB73D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B847AE24AF8CE1003EB73D /* AppDelegate.swift */; };
 		E0B847B124AF8CE1003EB73D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E0B847B024AF8CE1003EB73D /* GameScene.sks */; };
 		E0B847B524AF8CE1003EB73D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B847B424AF8CE1003EB73D /* GameScene.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E051734D24B24A95008031AC /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
 		E0B847AB24AF8CE1003EB73D /* SpaceShooter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceShooter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0B847AE24AF8CE1003EB73D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0B847B024AF8CE1003EB73D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				E0B847AE24AF8CE1003EB73D /* AppDelegate.swift */,
 				E0B847B024AF8CE1003EB73D /* GameScene.sks */,
 				E0B847B424AF8CE1003EB73D /* GameScene.swift */,
+				E051734D24B24A95008031AC /* Explosion.sks */,
 				E0B847D224B072EF003EB73D /* EnemyNode.swift */,
 				E0B847B624AF8CE1003EB73D /* GameViewController.swift */,
 				E0B847B824AF8CE1003EB73D /* Main.storyboard */,
@@ -154,6 +157,7 @@
 				E0B847B124AF8CE1003EB73D /* GameScene.sks in Resources */,
 				E0B847C724AF8E6B003EB73D /* StarField.sks in Resources */,
 				E0B847BC24AF8CE3003EB73D /* Assets.xcassets in Resources */,
+				E051734E24B24A95008031AC /* Explosion.sks in Resources */,
 				E0B847C924B03BC0003EB73D /* waves.json in Resources */,
 				E0B847BF24AF8CE3003EB73D /* LaunchScreen.storyboard in Resources */,
 			);
