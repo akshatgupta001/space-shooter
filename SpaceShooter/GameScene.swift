@@ -7,7 +7,7 @@
 //
 
 import SpriteKit
-import GameplayKit
+import CoreMotion
 
 enum collisionType : UInt32 {
     case player = 1
@@ -17,6 +17,8 @@ enum collisionType : UInt32 {
 }
 
 class GameScene: SKScene , SKPhysicsContactDelegate{
+    
+    let motionManager = CMMotionManager()
     
     let player = SKSpriteNode(imageNamed: "player")
     
@@ -54,10 +56,22 @@ class GameScene: SKScene , SKPhysicsContactDelegate{
         
         player.physicsBody?.isDynamic = false
      
-    
+        motionManager.startAccelerometerUpdates()
+        
     }
     
     override func update(_ currentTime: TimeInterval) {
+        
+        if let accelerometerData = motionManager.accelerometerData{
+            player.position.y = CGFloat(accelerometerData.acceleration.x * 50)
+            
+            if player.position.y < frame.minY {
+                player.position.y = frame.minY
+            }else if player.position.y > frame.maxY{
+                player.position.y = frame.maxY
+            }
+        }
+        
         for child in children {
             if child.frame.maxX < 0 {
                 if !frame.intersects(child.frame){
