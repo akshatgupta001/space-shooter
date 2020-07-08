@@ -30,6 +30,16 @@ class GameScene: SKScene , SKPhysicsContactDelegate{
     var waveNumber = 0
     var playerShields = 4
     
+    let scoreLabel = SKLabelNode(fontNamed: "HelveticaNeue-Thin")
+    var score = 0 {
+           didSet {
+               let formatter = NumberFormatter()
+               formatter.numberStyle = .decimal
+               let formattedScore = formatter.string(from: score as NSNumber) ?? "0"
+               scoreLabel.text = "Score : \(formattedScore)"
+           }
+       }
+    
     let positions = Array(stride(from: -320, to: 400, by: 80))
    
     override func didMove(to view: SKView) {
@@ -42,6 +52,13 @@ class GameScene: SKScene , SKPhysicsContactDelegate{
             particles.zPosition = -1
             addChild(particles )
         }
+        
+        scoreLabel.fontSize = 64
+        scoreLabel.position = CGPoint(x:frame.minX, y: frame.minY)
+        scoreLabel.text = "Score : 0"
+        scoreLabel.zPosition = 100
+        scoreLabel.horizontalAlignmentMode = .left
+        addChild(scoreLabel)
         
         player.name = "player"
         player.position.x = frame.minX + 75
@@ -63,7 +80,7 @@ class GameScene: SKScene , SKPhysicsContactDelegate{
     override func update(_ currentTime: TimeInterval) {
         
         if let accelerometerData = motionManager.accelerometerData{
-            player.position.y = CGFloat(accelerometerData.acceleration.x * 50)
+            player.position.y = CGFloat(accelerometerData.acceleration.x * 400)
             
             if player.position.y < frame.minY {
                 player.position.y = frame.minY
@@ -89,7 +106,7 @@ class GameScene: SKScene , SKPhysicsContactDelegate{
             if enemy.lastFireTime + 1 < currentTime{
                 enemy.lastFireTime = currentTime
                 
-                if Int.random(in: 0...6) == 0 {
+                if Int.random(in: 0...4) == 0 {
                     enemy.fire()
                 }
             }
@@ -171,6 +188,7 @@ class GameScene: SKScene , SKPhysicsContactDelegate{
             }
             firstNode.removeFromParent()
         }else if let enemy = firstNode as? EnemyNode{
+            score += Int( 50 * enemy.shields)
             enemy.shields -= 1
             
             if enemy.shields == 0 {
@@ -188,6 +206,7 @@ class GameScene: SKScene , SKPhysicsContactDelegate{
             secondNode.removeFromParent()
             
         }else {
+            
             if let explosion = SKEmitterNode(fileNamed: "Explosion"){
                explosion.position = secondNode.position
                addChild(explosion)
